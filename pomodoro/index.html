@@ -1,0 +1,40 @@
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<style>
+		h1 {
+			text-decoration: underline;
+		}
+		h2 {
+			user-select: none;
+			font-size: 5em;
+		}
+		h5{
+			user-select: none;
+		}
+		#options{
+			margin-top: 15px;
+		}
+		#db:hover,#is:hover,#ds:hover,#ib:hover,button:hover{
+			cursor: pointer;
+		}
+		.container{
+			cursor: default;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Pomodoro Clock</h1>
+		<h2 id="time">25:00</h2>
+		<button type="button" class="btn btn-primary" id="start">Start</button>
+		<button type="button" class="btn btn-danger" id="reset">Reset</button>
+		<div id="options">
+			<h5>Session Length: <span id="ds">- </span><em id="session-length">25</em><span id="is"> +</span></h5>
+			<h5>Break Length: <span id="db">- </span><em id="break-length">5</em><span id="ib"> +</span></h5>
+		</div>
+	</div>
+</body>
+

@@ -1,0 +1,58 @@
+<!doctype html>
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<style>
+		h1{
+			text-decoration: underline;
+		}
+
+		#board {
+			margin-top:8px;
+			user-select: none;
+		}
+		td {
+			cursor: pointer;
+			border: 1px solid black;
+			text-align: center;
+			width: 100px;
+			height: 100px;
+			font-size: 3em;
+		}
+		td:hover{
+			background:gray;
+		}
+	</style>
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h1> Tic Tac Toe </h1>
+		<button onClick="newGame()">New Game</button>
+		<button onClick="set_x()" id="x">Play as X</button>
+		<button onClick="set_o()" id="o">Play as O</button>
+
+		<table id="board">
+				<tr>
+					<td id = "1" onClick="nextMove(this)"></td>
+					<td id = "2" onClick="nextMove(this)"></td>
+					<td id = "3" onClick="nextMove(this)"></td>
+				</tr>
+				<tr>
+					<td id = "4" onClick="nextMove(this)" ></td>
+					<td id = "5" onClick="nextMove(this)" ></td>
+					<td id = "6" onClick="nextMove(this)" ></td>
+				</tr>
+				<tr>	
+					<td id = "7" onClick="nextMove(this)"></td>
+					<td id = "8" onClick="nextMove(this)"></td>
+					<td id = "9" onClick="nextMove(this)"></td>
+				</tr>
+		</table>
+		<p id= "msg"></p>
+	</div>
+</body >
+
+
+</doctype>

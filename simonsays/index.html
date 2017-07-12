@@ -1,0 +1,72 @@
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<script src="script.js"></script>
+	<style>
+		h1{
+			text-decoration: underline;
+		}
+		.board{
+			height:360px;
+			width:360px;
+			user-select: none;
+		}
+		.square{
+			height: 180px;
+			width: 180px;
+		}
+		#red{
+			background-color: red;
+			opacity:;
+		}
+		#blue{
+			color: white;
+			background-color: blue;
+			opacity:;
+		}
+		#green{
+			background-color: green;
+			opacity:;
+		}
+		#yellow{
+			background-color: yellow;
+			opacity:;
+		}
+		#red:hover, #blue:hover, #yellow:hover, #green:hover {
+			border: 2px solid black;
+			cursor: pointer;
+		}
+		#options{
+			margin-top:-8px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+		<h1>Simon Says</h1>
+		<div class="board d-flex flex-wrap justify-content-between">
+			<div onmousedown="down(this)" onmouseup="up(this)" id="red" class="square">red</div>
+			<div onmousedown="down(this)" onmouseup="up(this)" id="yellow" class="square">yellow</div>
+			<div onmousedown="down(this)" onmouseup="up(this)" id="green" class="square">green</div>
+			<div onmousedown="down(this)" onmouseup="up(this)" id="blue" class="square">blue</div>
+		</div>
+		<p id="round">Round: 1</p>
+		<p id="msg">Press New Game to Start</p>
+		<p id="strict-status">Strict Mode: Off</p>
+		<div id="options">
+			<button onclick="game.newGame()" id="newGame">New Game</button>
+			<button id="strict">Strict</button>
+		</div>
+	</div>
+	<audio id="audiored" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" ></audio>
+	<audio id="audioyellow" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" ></audio>
+	<audio id="audiogreen" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" ></audio>
+	<audio id="audioblue" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" ></audio>
+	<audio id="buzzer" src="buzzer.mp3" ></audio>
+</body>
+
+</html>
