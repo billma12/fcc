@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<style>
+		button {
+			font-size: 2em;
+			width: 65px;
+			height: 60px;
+		}
+		#ac, #enter {
+			height: 60px;
+			width: 130px;
+		}
+		h1{
+			text-decoration: underline;
+		}
+		h5{
+			opacity: 0.7;
+		}
+		.row_{
+			display: flex;
+		}
+		.row_ > button {
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+		<h1>Calculator</h1>
+		<div id="entry">
+			<h2 id="result">0</h1>
+			<h5 id="history">0</h5>
+		</div>
+
+		<div id="calculator">
+			<div class="row_">
+				<button id = "ac"> AC </button>
+				<button id = "ce"> CE </button>
+				<button id = "/" class="divide"> / </button>
+			</div>
+			<div class="row_">
+				<button id = "7"> 7 </button>
+				<button id = "8"> 8 </button>
+				<button id = "9"> 9 </button>
+				<button id = "*"> * </button>
+			</div>
+			<div class="row_">
+				<button id = "4"> 4 </button>
+				<button id = "5"> 5 </button>
+				<button id = "6"> 6 </button>
+				<button id = "-"> - </button>		
+			</div>
+			<div class="row_">
+				<button id = "1"> 1 </button>
+				<button id = "2"> 2 </button>
+				<button id = "3"> 3 </button>
+				<button id = "+"> + </button>
+			</div>
+			<div class="row_">
+				<button id = "0"> 0 </button>
+				<button id = "."> . </button>
+				<button id = "enter"> = </button>
+			</div>	
+		</div>
+	</div>
+</body>
+</html>
