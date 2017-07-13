@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Wikipedia Viewer</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<header class="container" align="center">
+		<h1>Wikipedia Viewer</h1>
+		<input type="text" id="input">
+		<button onclick="getInput()">Search</button>
+		<p><code id="error"></code></p>
+	</header>
+
+	<!-- http://getbootstrap.com/javascript/#collapse-example-accordion -->
+	<div id="articles">
+	<section class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+	  <article class="panel panel-default">
+	    <div class="panel-heading" role="tab" id="headingOne">
+	      <h4 class="panel-title">
+	        <a id="title1" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	         &#160;
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+	      <div class="panel-body">
+	        <p id="extract1"></p>
+	        <p><a id ="a1" href="#" target="_blank">Full article here</a></p>
+	        <img id="img1" src="">
+	      </div>
+	    </div>
+	  </article>
+	  <article class="panel panel-default">
+	    <div class="panel-heading" role="tab" id="headingTwo">
+	      <h4 class="panel-title">
+	        <a id="title2" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+	         &#160;
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+	      <div class="panel-body">
+	    	<p id="extract2">e</p>
+	    	<p><a id ="a2" href="#" target="_blank">Full article here</a></p>
+	    	<img id="img2" src="">
+	      </div>
+	    </div>
+	  </article>
+	  <article class="panel panel-default">
+	    <div class="panel-heading" role="tab" id="headingThree">
+	      <h4 class="panel-title">
+	        <a id="title3" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+	          &#160;
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+	      <div class="panel-body">
+	      	<p id="extract3"></p>
+	      	<p><a id ="a3" href="#" target="_blank">Full article here</a></p>
+	      	<img id="img3" src="">
+	      </div>
+	    </div>
+	  </article>
+	   <article class="panel panel-default">
+	    <div class="panel-heading" role="tab" id="headingFour">
+	      <h4 class="panel-title">
+	        <a id="title4" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+	          &#160;
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+	      <div class="panel-body">
+	      	<p id="extract4"></p>
+	      	<p><a id ="a4" href="#" target="_blank">Full article here</a></p>
+	      	<img id="img4" src="">
+	      </div>
+	    </div>
+	  </article>
+	   <article class="panel panel-default">
+	    <div class="panel-heading" role="tab" id="headingFive">
+	      <h4 class="panel-title">
+	        <a id="title5" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+	          &#160;
+	        </a>
+	      </h4>
+	    </div>
+	    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+	      <div class="panel-body">
+	      	<p id="extract5"></p>
+	      	<p><a id ="a5" href="#" target="_blank">Full article here</a></p>
+	      	<img id="img5" src="">
+	      </div>
+	    </div>
+	  </article>
+	</section>
+	</div>
+
+	<p align="center"><a target="_blank" href="https://en.wikipedia.org/wiki/Special:Random">random wikipedia article</a></p>
+</body>
+</html>
